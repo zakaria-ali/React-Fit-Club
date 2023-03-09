@@ -1,0 +1,105 @@
+.reasons{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+.reasons-img {
+    flex: 1 1;
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+}
+.reasons-img img {
+    object-fit: cover;
+}
+.reasons-img>img {
+    width: 12rem;
+    height: 30rem;
+}
+.sub-imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+}
+.sub-imgs>img {
+    width: 27rem;
+    height: 17rem;
+}
+.sub-sub-imgs {
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+}
+.sub-sub-imgs img {
+    height: 12rem;
+}
+.sub-sub-imgs img:first-of-type {
+    width: 15rem;
+}
+.sub-sub-imgs img:last-child {
+    width: 11rem;
+}
+.some-reasons {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+.some-reasons div:nth-child(1) {
+    color: var(--orange);
+    font-size: 1.2rem;
+}
+.some-reasons div:nth-child(2) {
+    font-size: 3.5rem;
+}
+.ticks {
+    display: flex;
+    gap: 1rem;
+}
+.ticks img {
+    width: 2.3rem;
+    height: 2rem;
+}
+.ticks span {
+    font-size: 1.2rem;
+}
+.some-reasons div:nth-last-child(2) {
+    color: var(--gray);
+    font-size: 1.1rem;
+}
+.partners {
+    display: flex;
+    gap: 1rem;
+}
+.partners img {
+    width: 2.6rem;
+    height: 2rem;
+}
+@media screen and (max-width:768px) {
+    .reasons {
+        flex-direction: column;
+    }
+    .reasons-img>img {
+        width: 6rem;
+        height: 15rem;
+    }
+    .sub-imgs>img {
+        width: 9rem;
+        height: 8.5rem;
+    }
+    .sub-sub-imgs img {
+        height: 5.5rem;
+    }
+    .sub-sub-imgs img:first-of-type {
+        width: 9rem;
+    }
+    .sub-sub-imgs img:last-child {
+        display: none;
+    }
+}
+
+

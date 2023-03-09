@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.header > img {
+    width: 10rem;
+    height: 3rem;
+}
+.app-scrolled > img {
+    width: 10rem;
+    height: 3rem;
+}
+.app-scrolled {
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 38rem;
+    z-index: 100;
+    background-color: var(--appColor);
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+}
+ul li:hover {
+    cursor: pointer;
+    color: var(--orange);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width:768px) {
+    .header > :nth-child(2) {
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+    .app-scrolled {
+    position:initial;
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    }
+    .app-scrolled > :nth-child(2) {
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+    ul {
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+}
